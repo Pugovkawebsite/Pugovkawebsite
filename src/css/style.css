@@ -1,0 +1,145 @@
+* {
+    font-family: Kumbh Sans;
+}
+
+
+
+.card {
+    position: relative;
+    width: 1440px;
+    height: 720px;
+    background: #19A1AE;
+    margin: 0 auto;   
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.right {
+    position: absolute;
+    right: 0;
+    bottom: 0; 
+    z-index: 0;
+}
+.item {
+    position: relative;
+    width: 350px;
+    height: 374px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    /* margin: 0 auto; */
+    z-index: 1;
+}
+.person {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: 92px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.name {
+    margin-top: 72px;
+    text-align: center;
+    font-weight: 700;  
+    font-size: 18px; 
+}
+.age {
+    font-weight: 400;
+    margin-left: 8.5px;
+    font-size: 18px;
+    color: #6B7082;
+}
+.city {
+    color: #6B7082;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 8px;
+}
+hr {
+    color: #E8E9EC;
+    height: 2px;
+    width: 100%;
+    margin-top: 28px;
+}
+.statistics {
+    margin: 24px 56.5px 27px 48.5px;
+    width: 246px;
+    display: flex;
+    justify-content: space-between;
+}
+.number {
+    height: 18px;
+    font-weight: 700;
+    color: #2E3349;
+    text-align: center;
+}
+.descr {
+    margin-top: 9px;
+    font-size: 10px;
+    color: #6B7082;
+    font-weight: 400;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .descr {
+        font-size: 12px;
+        margin-top: 7px;
+    }
+}
+@media (max-width: 992px) {
+    .descr {
+        font-size: 12px;
+        margin-top: 7px;
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        width: 375px;
+        overflow: hidden;
+    }
+    .left {
+        transform: translateX(-70%);
+    }
+    .right {       
+       transform: translateX(70%);       
+    }
+    .item {
+        width: px;
+        height: 374px;
+    }
+    .blue {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .card {
+        width: 375px;
+        overflow: hidden;
+    }
+    .left {
+        transform: translateX(-70%);
+    }
+    .right {       
+       transform: translateX(70%);       
+    }
+    .item {
+        width: px;
+        height: 374px;
+    }
+    .blue {
+        width: 100%;
+    }
+}
